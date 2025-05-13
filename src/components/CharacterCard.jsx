@@ -18,7 +18,7 @@ export const CharacterCard = ({ id, name }) => {
     {/* <Link to={`/profile-page/${uid}`}>
      <button className="btn btn-primary">Learn more!</button>
     </Link> */}
-    <Link to={`/profile-page/people/${id}`}>
+    <Link to={`/people-profile-page/people/${id}`}>
     <button className="btn btn-primary">Learn More!</button>
     </Link>
   </div>

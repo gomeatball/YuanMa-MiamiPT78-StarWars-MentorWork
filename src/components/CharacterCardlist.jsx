@@ -12,7 +12,7 @@ export const CharacterCardlist = ( {allpeople} ) => {
     return (
 
         <>
-        <div className="row d-flex flex-nowrap overflow-auto">
+        <div className="row d-flex flex-nowrap overflow-auto mt-4">
         {
           allpeople.map(person => {
          return (
