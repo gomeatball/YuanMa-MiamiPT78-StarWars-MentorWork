@@ -18,9 +18,15 @@ const toggleFavorite = (item) =>{
     });
 }
 
+const removeFavorite = (item) => {
+  setFavorites((prevState) => {
+   return prevState.filter( fav => !(fav.uid === item.uid && fav.type === item.type))
+  });
+}
+
    return (
     <>
-<FavoritesContext.Provider value={{toggleFavorite, favorites}}>
+<FavoritesContext.Provider value={{toggleFavorite, favorites, removeFavorite}}>
     {children}
 </FavoritesContext.Provider>
     </>
