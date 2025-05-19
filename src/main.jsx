@@ -4,16 +4,19 @@ import './index.css'  // Global styles for your application
 import { RouterProvider } from "react-router-dom";  // Import RouterProvider to use the router
 import { router } from "./routes";  // Import the router configuration
 import { StoreProvider } from './hooks/useGlobalReducer';  // Import the StoreProvider for global state management
+import { FavoritesProvider } from './hooks/FavoritesContext';
 
 const Main = () => {
     return (
-       <>
-        <StoreProvider> 
-                {/* Set up routing for the application */} 
-                <RouterProvider router={router}>
-                </RouterProvider>
+        <>
+            <StoreProvider>
+                <FavoritesProvider>
+                    {/* Set up routing for the application */}
+                    <RouterProvider router={router}>
+                    </RouterProvider>
+                </FavoritesProvider>
             </StoreProvider>
-       </>
+        </>
     );
 }
 

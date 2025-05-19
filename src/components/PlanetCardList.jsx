@@ -10,7 +10,7 @@ export const PlanetCardList = ({ allplanets }) => {
                     return (
                        <PlanetCard
                            key={planet.uid}
-                           id={planet.uid}
+                           uid={planet.uid}
                            name={planet.name}
                        />
                     )

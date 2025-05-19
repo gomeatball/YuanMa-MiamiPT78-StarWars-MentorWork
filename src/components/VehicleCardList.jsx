@@ -8,7 +8,7 @@ export const VehicleCardList = ({ allvehicles }) => {
                             return (
                                <VehicleCard
                                    key={vehicle.uid}
-                                   id={vehicle.uid}
+                                   uid={vehicle.uid}
                                    name={vehicle.name}
                                />
                             )

@@ -18,7 +18,7 @@ export const CharacterCardlist = ( {allpeople} ) => {
          return (
             <CharacterCard
                 key={person.uid}
-                id={person.uid}
+                uid={person.uid}
                 name={person.name}
             />
          )
