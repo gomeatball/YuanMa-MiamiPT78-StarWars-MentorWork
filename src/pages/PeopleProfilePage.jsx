@@ -25,8 +25,41 @@ export const PeopleProfilePage = () => {
 
     return (
 
-        <>
-       {character.hair_color}
-        </>
+       <div className="row mt-4">
+        <div className="col-2"></div> 
+        <div className="description col-8">
+             <div className="character-description-head d-flex justify-content-between">
+               <img src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/people/${uid}.jpg?raw=true`} className="card-img-top w-25 h-75" alt="..." />
+                <div>
+                <h3>{character.name}</h3>
+                <p>There is no description for character</p>
+                </div>
+             </div>
+             <div className="details d-flex justify-content-around mt-4 text-danger border-top border-danger pt-4">
+                <div>
+                    <h5>Name</h5>
+                    <p>{character.name}</p>
+                </div>
+                <div>
+                    <h5>Height</h5>
+                    <p>{character.height}</p>
+                </div>
+                <div>
+                    <h5>Birth</h5>
+                    <p>{character.birth_year}</p>
+                </div>
+                <div>
+                    <h5>Skin Color</h5>
+                    <p>{character.skin_color}</p>
+                </div>
+                <div>
+                    <h5>Hair Color</h5>
+                    <p>{character.hair_color}</p>
+                </div>
+             </div>
+
+        </div>
+        <div className="col-2"></div>
+       </div>
     )
 }
