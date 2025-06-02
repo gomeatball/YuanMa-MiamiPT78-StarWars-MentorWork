@@ -18,7 +18,9 @@ export const Navbar = () => {
 							favorites {favorites.length}
 						</button>
 						<ul className="dropdown-menu">
-							{favorites.map((item, index) => (<li key={index}>{item.name}
+							{favorites.map((item, index) => (<li key={index} className="d-flex justify-content-between">
+								
+								<h5>{item.name}</h5>
 
 								<button onClick={()=> {
 									// e.preventDefault(); 
