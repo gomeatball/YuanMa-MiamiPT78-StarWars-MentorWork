@@ -30,7 +30,7 @@ export const PeopleProfilePage = () => {
         <div className="description col-8">
              <div className="character-description-head d-flex justify-content-between">
                <img src={`https://github.com/breatheco-de/swapi-images/blob/master/public/images/people/${uid}.jpg?raw=true`} className="card-img-top w-25 h-75" alt="..." />
-                <div>
+                <div className="text-center">
                 <h3>{character.name}</h3>
                 <p>There is no description for character</p>
                 </div>
